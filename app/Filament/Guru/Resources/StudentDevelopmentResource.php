@@ -205,12 +205,12 @@ class StudentDevelopmentResource extends Resource
     // ===================================================================
 
   /**
-   * Kognitif: Tinggi (>75–≤100), Sedang (>50–<75), Rendah (0–<50)
+   * Kognitif: Tinggi (>=80–≤100), Sedang (>40–<80), Rendah (0–<=40)
    */
   public static function getKognitifLabel(float $val): string
   {
-    if ($val > 75) return 'Tinggi';
-    if ($val > 50) return 'Sedang';
+    if ($val >= 80) return 'Tinggi';
+    if ($val > 40) return 'Sedang';
     return 'Rendah';
   }
 
@@ -224,12 +224,12 @@ class StudentDevelopmentResource extends Resource
   }
 
   /**
-   * Sosial Emosional: Sangat Baik (>60–≤100), Baik (>45–<60), Butuh Bimbingan (0–<45)
+   * Sosial Emosional: Sangat Baik (>=60–≤100), Baik (>40–<60), Butuh Bimbingan (0–<=40)
    */
   public static function getSosialEmosionalLabel(float $val): string
   {
-    if ($val > 60) return 'Sangat Baik';
-    if ($val > 45) return 'Baik';
+    if ($val >= 60) return 'Sangat Baik';
+    if ($val > 40) return 'Baik';
     return 'Butuh Bimbingan';
   }
 
@@ -330,9 +330,9 @@ class StudentDevelopmentResource extends Resource
     // ============================================
     $numerator = 0.0;
     $denominator = 0.0;
-    $step = 0.5; // finer step for better accuracy
+    $step = 0.01; // finer step for better accuracy
 
-    for ($z = 0; $z <= 100; $z += $step) {
+    for ($z = 0; $z <= 70; $z += $step) {
       // Compute clipped output membership values
       $muStimulasi = min(self::outputStimulasi($z), $alphaStimulasi);
       $muBerkembang = min(self::outputBerkembang($z), $alphaBerkembang);
@@ -362,15 +362,15 @@ class StudentDevelopmentResource extends Resource
 
   /**
    * μrendah(x):
-   *   0          if x ≥ 80
-   *   (80-x)/20  if 60 ≤ x ≤ 80
-   *   1          if x ≤ 60
+   *   0          if x ≥ 60
+   *   (60-x)/20  if 40 ≤ x ≤ 60
+   *   1          if x ≤ 40
    */
   private static function kognitifRendah(float $x): float
   {
-    if ($x >= 80) return 0.0;
-    if ($x <= 60) return 1.0;
-    return (80 - $x) / 20;
+    if ($x >= 60) return 0.0;
+    if ($x <= 40) return 1.0;
+    return (60 - $x) / 20;
   }
 
   /**
@@ -435,15 +435,15 @@ class StudentDevelopmentResource extends Resource
 
   /**
    * μbutuh_bimbingan(x):
-   *   0          if x ≥ 60
-   *   (60-x)/10  if 50 ≤ x ≤ 60
-   *   1          if x ≤ 50
+   *   0          if x ≥ 50
+   *   (50-x)/10  if 40 ≤ x ≤ 50
+   *   1          if x ≤ 40
    */
   private static function sosialButuhBimbingan(float $x): float
   {
-    if ($x >= 60) return 0.0;
-    if ($x <= 50) return 1.0;
-    return (60 - $x) / 10;
+    if ($x >= 50) return 0.0;
+    if ($x <= 40) return 1.0;
+    return (50 - $x) / 10;
   }
 
   /**
