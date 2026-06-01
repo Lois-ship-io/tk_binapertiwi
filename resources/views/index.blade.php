@@ -170,7 +170,7 @@
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl font-bold text-slate-900 mb-4">Fitur Utama Sistem</h2>
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Fitur Utama</h2>
                 <p class="text-slate-600">Dirancang khusus untuk mendukung kolaborasi sinergis antara Admin, Guru, dan Orang Tua demi perkembangan anak yang optimal.</p>
             </div>
 
