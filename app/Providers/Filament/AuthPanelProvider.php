@@ -32,6 +32,9 @@ class AuthPanelProvider extends PanelProvider
       ->path('auth')
       ->login()
       ->brandName('TK Bina Pertiwi')
+      ->brandLogo(asset('assets/img/logo-tk-no-bg.png'))
+      ->brandLogoHeight('3rem')
+      ->favicon(asset('assets/img/logo-tk.png'))
       ->colors([
         'primary' => Color::Blue,
       ])

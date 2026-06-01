@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TK Bina Pertiwi - Monitoring Perkembangan Edukasi Anak Usia Dini</title>
+    <link rel="icon" type="image/png" href="{{ asset('assets/img/logo-tk.png') }}">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
@@ -17,10 +18,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <!-- Logo -->
-                <div class="shrink-0 flex items-center gap-2">
-                    <div class="w-10 h-10 rounded-xl bg-linear-to-br from-blue-500 to-pink-500 flex items-center justify-center text-white font-bold text-xl shadow-lg">
-                        BP
-                    </div>
+                <div class="shrink-0 flex items-center gap-3">
+                    <img src="{{ asset('assets/img/logo-tk-no-bg.png') }}" alt="Logo TK Bina Pertiwi" class="w-12 h-12 object-contain hover:scale-105 transition-transform duration-300">
                     <span class="font-bold text-xl tracking-tight text-slate-900">TK Bina Pertiwi</span>
                 </div>
 
@@ -78,7 +77,7 @@
                 <div class="relative lg:h-125 w-full flex items-center justify-center">
                    <div class="relative w-full aspect-video rounded-3xl overflow-hidden shadow-2xl shadow-blue-900/10 border-4 border-white transform rotate-2 hover:rotate-0 transition-all duration-500">
                         <!-- Placeholder for Hero Image -->
-                        <img src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?q=80&w=2070&auto=format&fit=crop"
+                        <img src="assets/img/landing-page-tk.png"
                              alt="Anak-anak belajar"
                              class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-linear-to-t from-black/30 to-transparent"></div>
@@ -251,10 +250,8 @@
             <div class="grid md:grid-cols-4 gap-12 mb-16">
                 <!-- Brand -->
                 <div class="col-span-1 md:col-span-2">
-                    <div class="flex items-center gap-2 mb-6">
-                        <div class="w-8 h-8 rounded-lg bg-linear-to-br from-blue-500 to-pink-500 flex items-center justify-center text-white font-bold text-sm shadow-lg">
-                            BP
-                        </div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <img src="{{ asset('assets/img/logo-tk-no-bg.png') }}" alt="Logo TK Bina Pertiwi" class="w-10 h-10 object-contain hover:scale-105 transition-transform duration-300">
                         <span class="font-bold text-xl tracking-tight">TK Bina Pertiwi</span>
                     </div>
                     <p class="text-slate-400 leading-relaxed max-w-sm">

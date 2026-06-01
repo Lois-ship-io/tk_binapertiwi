@@ -29,6 +29,10 @@ class KepalaSekolahPanelProvider extends PanelProvider
     return $panel
       ->id('kepala_sekolah')
       ->path('kepala_sekolah')
+      ->brandName('TK Bina Pertiwi')
+      ->brandLogo(asset('assets/img/logo-tk-no-bg.png'))
+      ->brandLogoHeight('3rem')
+      ->favicon(asset('assets/img/logo-tk.png'))
       ->colors([
         'primary' => Color::Blue,
       ])

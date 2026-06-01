@@ -11,25 +11,54 @@
             font-size: 14px;
         }
 
-        /* Header */
-        .header {
+        /* Header / Kop Surat */
+        .kop-table {
+            width: 100%;
+            border-collapse: collapse;
+            border-bottom: 4px double #333;
+            padding-bottom: 8px;
+            margin-bottom: 25px;
+        }
+        .kop-logo-left {
+            width: 15%;
+            text-align: left;
+            vertical-align: middle;
+        }
+        .kop-logo-right {
+            width: 15%;
+            text-align: right;
+            vertical-align: middle;
+        }
+        .kop-text-center {
+            width: 70%;
             text-align: center;
-            margin-bottom: 30px;
-            border-bottom: 3px double #333;
-            padding-bottom: 15px;
+            vertical-align: middle;
+            line-height: 1.35;
         }
-        .header h1 {
-            margin: 0;
-            font-size: 24px;
-            font-weight: 800;
+        .kop-logo-img {
+            height: 80px;
+            width: auto;
+        }
+        .kop-title-1 {
+            font-size: 15px;
+            font-weight: bold;
             text-transform: uppercase;
-            letter-spacing: 1px;
-            color: #000;
+            color: #444;
+            letter-spacing: 0.5px;
+            margin: 0;
         }
-        .header p {
-            margin: 5px 0;
-            font-size: 14px;
+        .kop-title-2 {
+            font-size: 17px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #333;
+            margin: 3px 0 0 0;
+        }
+        .kop-detail {
+            font-size: 12px;
             color: #555;
+            margin: 2px 0 0 0;
+            font-weight: 500;
         }
 
         /* Content Info */
@@ -127,31 +156,52 @@
 
         /* Signature */
         .signature-table {
-            width: 100%;
-            margin-top: 60px;
-        }
-        .signature-table td {
-            vertical-align: top;
+            width: 250px;
+            margin: 45px auto 0 auto;
+            border-collapse: collapse;
         }
         .signature-box {
             text-align: center;
         }
-        .signature-space {
-            height: 80px;
+        .signature-title {
+            font-size: 14px;
+            color: #333;
+            margin: 0;
+            line-height: 1.4;
+        }
+        .signature-img {
+            width: 95px;
+            height: 95px;
+            margin: 8px auto;
+            display: block;
         }
         .signature-name {
             font-weight: bold;
-            text-decoration: underline;
+            font-size: 14px;
+            color: #333;
+            margin-top: 5px;
         }
 
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>TK Bina Pertiwi</h1>
-        <p>Jl. Contoh Alamat No. 123, Kota Contoh, Provinsi Contoh</p>
-        <p>Telp: (021) 12345678 | Email: tkbinapertiwi@example.com</p>
-    </div>
+    <table class="kop-table">
+        <tr>
+          <td class="kop-logo-right">
+                <img src="{{ public_path('assets/img/logo-tk-1.png') }}" class="kop-logo-img" alt="Logo Yayasan">
+            </td>
+            <td class="kop-text-center">
+                <div class="kop-title-1">Taman Kanak-Kanak Bina Pertiwi</div>
+                <div class="kop-title-2">"YAYASAN HARAPAN BUNDA KELAPA DUA"</div>
+                <div class="kop-detail">Perumahan Dasana Indah Blok RE 3 No.16</div>
+                <div class="kop-detail">Jl. Wijaya Kusuma Barat RT. 07/RW. 18 &ndash; Kelapa Dua &ndash; Tangerang</div>
+                <div class="kop-detail">Hp. 0856 9113 1730</div>
+            </td>
+            <td class="kop-logo-left">
+                <img src="{{ public_path('assets/img/logo-tk-no-bg.png') }}" class="kop-logo-img" alt="Logo TK">
+            </td>
+        </tr>
+    </table>
 
     <div class="report-title">LAPORAN PERKEMBANGAN ANAK</div>
 
@@ -219,13 +269,12 @@
 
     <table class="signature-table">
         <tr>
-            <td width="50%"></td>
-            <td width="50%">
+            <td>
                 <div class="signature-box">
-                    <p>Mengetahui,</p>
-                    <p>Kepala Sekolah</p>
-                    <div class="signature-space"></div>
-                    <p class="signature-name">( ................................................. )</p>
+                    <div class="signature-title">Mengetahui,</div>
+                    <div class="signature-title" style="margin-bottom: 5px;">Kepala Sekolah</div>
+                    <img src="{{ public_path('assets/img/ttd.png') }}" class="signature-img" alt="Tanda Tangan QR">
+                    <div class="signature-name">Laila Syaflina, A.Md.</div>
                 </div>
             </td>
         </tr>
