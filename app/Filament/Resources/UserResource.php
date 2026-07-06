@@ -74,7 +74,7 @@ class UserResource extends Resource
 
         Toggle::make('is_responsible')
           ->label('Penanggung Jawab Perkembangan Anak')
-          ->helperText('Aktifkan jika guru ini bertanggung jawab untuk menginput data perkembangan anak.')
+          ->helperText('Aktifkan jika ini bertanggung jawab untuk menginput data perkembangan anak.')
           ->default(false),
       ]);
   }

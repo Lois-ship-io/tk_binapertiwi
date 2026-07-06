@@ -234,15 +234,15 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td class="text-center">1</td>
-                <td>Psikomotorik</td>
-                <td class="text-center">{{ $record->psikomotorik }}</td>
-            </tr>
             <tr class="table-row-even">
-                <td class="text-center">2</td>
+                <td class="text-center">1</td>
                 <td>Kognitif</td>
                 <td class="text-center">{{ $record->kognitif }}</td>
+            </tr>
+             <tr>
+                <td class="text-center">2</td>
+                <td>Psikomotorik</td>
+                <td class="text-center">{{ $record->psikomotorik }}</td>
             </tr>
             <tr>
                 <td class="text-center">3</td>

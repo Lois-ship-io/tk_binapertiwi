@@ -20,7 +20,7 @@
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center gap-3">
                     <img src="{{ asset('assets/img/logo-tk-no-bg.png') }}" alt="Logo TK Bina Pertiwi" class="w-12 h-12 object-contain hover:scale-105 transition-transform duration-300">
-                    <span class="font-bold text-xl tracking-tight text-slate-900">TK Bina Pertiwi</span>
+                    <span class="font-bold text-xl tracking-tight text-slate-900">TK BINA PERTIWI</span>
                 </div>
 
                 <!-- Desktop Menu -->
@@ -57,14 +57,14 @@
                 <!-- Text Content -->
                 <div class="text-center lg:text-left space-y-8">
                     <h1 class="text-4xl lg:text-6xl font-bold leading-tight text-slate-900">
-                        Sistem Monitoring <br>
+                        Monitoring <br>
                         <span class="text-transparent bg-clip-text bg-linear-to-r from-blue-600 to-pink-500">
                             Perkembangan Anak
                         </span>
                         <br> Usia Dini
                     </h1>
                     <p class="text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                        Pantau perkembangan edukasi anak secara terstruktur dan terukur melalui platform berbasis web dengan dukungan fuzzy logic. Pendidikan terbaik untuk masa depan buah hati Anda.
+                        Program Sekolah Anak Usia Dini berfungsi sebagai landasan pembelajaran seumur hidup, yang menawarkan beragam kesempatan untuk tumbuh dan berkembang. Melalui metode dan kecepatan belajar yang bervariasi, pelajar muda mengembangkan keterampilan dan minat. Tujuan kami adalah untuk menumbuhkan individu yang bahagia, cakap, dan berkarakter mulia.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                         <a href="#profil" class="px-8 py-4 rounded-full bg-blue-600 text-white font-bold text-lg shadow-xl shadow-blue-500/30 hover:bg-blue-700 hover:scale-105 transition-all duration-300">
@@ -170,8 +170,8 @@
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl font-bold text-slate-900 mb-4">Fitur Utama</h2>
-                <p class="text-slate-600">Dirancang khusus untuk mendukung kolaborasi sinergis antara Admin, Guru, dan Orang Tua demi perkembangan anak yang optimal.</p>
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Kolaborasi Demi Masa Depan Anak</h2>
+                <p class="text-slate-600">Platform terpadu yang menjembatani semua pihak terkait, agar dapat bekerja sama secara sinergis demi tumbuh kembang anak yang lebih baik dan optimal.</p>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
@@ -180,11 +180,11 @@
                     <div class="w-14 h-14 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Admin</h3>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Kepala Sekolah</h3>
                     <ul class="space-y-2 text-slate-600 text-sm">
-                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-blue-400"></div> Kelola profil TK, user, guru, & anak</li>
-                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-blue-400"></div> Kelola arsip & data perkembangan</li>
-                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-blue-400"></div> Generate laporan otomatis</li>
+                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-blue-400"></div> Mengelola data profil sekolah, tenaga pendidik, dan murid</li>
+                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-blue-400"></div> Menyimpan arsip serta data perkembangan secara aman dan terstruktur</li>
+                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-blue-400"></div> Mengakses laporan perkembangan secara menyeluruh</li>
                     </ul>
                 </div>
 
@@ -195,9 +195,9 @@
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 mb-3">Guru</h3>
                     <ul class="space-y-2 text-slate-600 text-sm">
-                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-pink-400"></div> Input perkembangan (Fuzzy Logic)</li>
-                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-pink-400"></div> Kelola arsip kelas</li>
-                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-pink-400"></div> Cetak laporan perkembangan</li>
+                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-pink-400"></div> Melakukan penilaian perkembangan dengan sistem terukur</li>
+                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-pink-400"></div> Mengelola data lengkap setiap anak didik</li>
+                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-pink-400"></div> Menyajikan laporan hasil perkembangan anak secara rinci</li>
                     </ul>
                 </div>
 
@@ -208,9 +208,9 @@
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 mb-3">Orang Tua</h3>
                     <ul class="space-y-2 text-slate-600 text-sm">
-                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-purple-400"></div> Melihat ringkasan grafik anak</li>
-                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-purple-400"></div> Download / cetak laporan</li>
-                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-purple-400"></div> Memantau kolaborasi dengan guru</li>
+                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-purple-400"></div> Melihat ringkasan kemajuan anak dalam bentuk grafik yang jelas</li>
+                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-purple-400"></div> Mendapatkan dan mengunduh laporan perkembangan lengkap</li>
+                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-purple-400"></div> Memantau perkembangan dan berkomunikasi aktif</li>
                     </ul>
                 </div>
             </div>
@@ -266,7 +266,7 @@
                         <li><a href="#beranda" class="hover:text-white transition-colors">Beranda</a></li>
                         <li><a href="#profil" class="hover:text-white transition-colors">Profil TK</a></li>
                         <li><a href="#gallery" class="hover:text-white transition-colors">Gallery</a></li>
-                        <li><a href="/admin/login" class="hover:text-white transition-colors">Login Admin</a></li>
+                        
                     </ul>
                 </div>
 
@@ -274,12 +274,7 @@
                 <div>
                     <h4 class="font-bold text-lg mb-6 text-white">Kontak</h4>
                     <ul class="space-y-4 text-slate-400">
-                        <li class="flex items-start gap-3">
-                            <span class="text-blue-500 mt-1">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path></svg>
-                            </span>
-                            Jl. Contoh No. 1, Kota Anda
-                        </li>
+                       
                         <li class="flex items-start gap-3">
                              <span class="text-blue-500 mt-1">
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
